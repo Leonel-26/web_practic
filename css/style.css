@@ -1,0 +1,43 @@
+body {
+    background-image: url(../img/fondo.jpg);
+   }
+#formulario {
+    text-align: center;
+    width: 40%;
+    background: #529ed138;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin-left: 16px 0;
+    font-size: 16px;
+    font-family: cursive;
+    float:right;
+    }
+
+.logo {
+    max-width: 5rem;
+    margin: 0.2rem 0;
+    }  
+#contenido{
+    font-family: cursive;
+}
+.img{
+    max-width: 30rem;
+    margin: 2rem 0;
+    float: right;
+    margin: 20px;
+}
+
+.material-icons {
+    text-align: center;
+    color: purple;
+}
+
+.label, input {
+    text-align: left;
+    background-color: rgba(182, 228, 228, 0.26);
+}
+.btn-warning  {
+    text-align: center;
+    color:white;
+}

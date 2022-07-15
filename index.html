@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+    <body>
+      <center>
+        <img src="img/logo.png" width="80" height="80"  alt="" class="logo">
+       </center>
+      <div class="container my-5" id="contenido">
+      <p>
+        <center><FONT color="purple" class="parrafo"><h2><b>Cálculo del IMC</b></h2></FONT></center>
+      </p>
+      <div text-align="right"><img src="img/IMC.jpg" width="500" height="350" class="img" alt=""></div>
+      <div>
+    <form id="formulario">
+        <fieldset>
+            
+            <p><label for="nombre">Nombre:</label>
+            <input id="nombre" type="text"/></p>
+            
+            <p><label for="edad">Edad:</label>
+            <input id="edad" type="text"/></p>
+            
+            <label action> Sexo:<i class= "material-icons">wc</i></label>
+            <select name="sexo" id="sexo">
+            <option value= "masculino">Masculino</option>
+            <option value= "femenino">Femenino</option>
+            </select>
+            
+            <p><label for="kilos">Peso en kg.:</label>
+            <input id="kilos" type="text"/></p>
+        
+            <p><label for="metros">Altura en mt.:</label>
+            <input id="metros" type="text"/></p>
+            
+            <p><label for="centimetros">Altura en cm.:</label>
+            <input id="centimetros" type="text"/></p>
+        
+            <p><label for="imc">IMC:</label>
+            <input id="imc" type="text" disabled= "disabled"/></p>
+            
+            <button input type="button"  class="btn btn-danger" onclick="CalcularIMC()" value="Calcular IMC" id="Calcular IMC"><i class = "material-icons">data_usage</i>Calcular</button>
+            <button input type="button" class="btn btn-primary" onclick="guardar()" value="Guardar" id="Guardar"><i class = "material-icons">check_box</i>Guardar</button>
+            <button input type="button" class="btn btn-warning" onclick="consultar()" value="Consultar" id="Consultar"><i class = "material-icons">assessment</i>Consultar</button>
+            <button input type="reset" class="btn btn-success" onclick="borrar" value="Borrar" id="Borrar"><i class = "material-icons">delete</i>Borrar</button>
+      </fieldset>
+        </form>
+        
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    
+    
+</body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="/funciones.js/configuracion.js"></script>
+    <script src="/funciones.js/guardar.js"></script>
+    <script src="/funciones.js/calcular.js"></script>
+    <script src="/funciones.js/calculoimcjs.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</html>
